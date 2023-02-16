@@ -1,0 +1,1 @@
+wget -O - https://www.jamieoliver.com/recipes/category/course/quick-fixes/ | grep -A1 "recipe-block" | grep href | cut -d'/' -f2- | sed 's/..$//' | xargs -n1 echo "www.jamieoliver.com/" | sed 's/ //' | shuf -n 1
